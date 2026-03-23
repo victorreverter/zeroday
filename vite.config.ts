@@ -7,6 +7,7 @@ export default defineConfig({
   base: '/zeroday/',
   plugins: [react(), tailwindcss()],
   build: {
+    outDir: 'docs',
     rollupOptions: {
       output: {
         manualChunks(id) {
