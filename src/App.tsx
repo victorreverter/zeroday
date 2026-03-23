@@ -9,6 +9,8 @@ export interface FinancialState {
   saas: number;
   hiring: number;
   marketing: number;
+  seedFunding: number;
+  seriesAFunding: number;
 }
 
 const defaultState: FinancialState = {
@@ -18,6 +20,8 @@ const defaultState: FinancialState = {
   saas: 2000,
   hiring: 10000,
   marketing: 5000,
+  seedFunding: 0,
+  seriesAFunding: 2000000,
 };
 
 function App() {

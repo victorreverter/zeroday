@@ -67,6 +67,24 @@ export default function Sidebar({ state, updateState }: SidebarProps) {
         </section>
 
         <section>
+          <h2 className="text-[10px] font-bold text-slate-500 tracking-widest uppercase mb-5 border-b border-slate-800/60 pb-2">Future Funding</h2>
+          <div className="flex flex-col gap-6">
+            <InputGroup 
+              label="Seed Round (Month 3)" 
+              value={state.seedFunding} 
+              onChange={(v) => updateState('seedFunding', v)} 
+              max={1000000} 
+            />
+            <InputGroup 
+              label="Series A (Month 9)" 
+              value={state.seriesAFunding} 
+              onChange={(v) => updateState('seriesAFunding', v)} 
+              max={5000000} 
+            />
+          </div>
+        </section>
+
+        <section>
           <h2 className="text-[10px] font-bold text-slate-500 tracking-widest uppercase mb-5 border-b border-slate-800/60 pb-2">Fixed Costs</h2>
           <div className="flex flex-col gap-6">
             <InputGroup 
